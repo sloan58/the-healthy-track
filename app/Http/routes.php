@@ -3,11 +3,16 @@
 //Home Page
 get('/', 'PagesController@home' );
 
+//About Me Page
+get('about','PagesController@about');
+
 // Blog pages
 get('blog', 'BlogController@index');
 get('blog/{slug}', 'BlogController@showPost');
-$router->get('contact', 'ContactController@showForm');
-Route::post('contact', 'ContactController@sendContactInfo');
+
+get('contact', 'ContactController@showForm');
+post('contact', 'ContactController@sendContactInfo');
+
 get('rss', 'BlogController@rss');
 get('sitemap.xml', 'BlogController@siteMap');
 
@@ -15,6 +20,8 @@ get('sitemap.xml', 'BlogController@siteMap');
 get('admin', function () {
     return redirect('/admin/post');
 });
+
+
 $router->group([
     'namespace' => 'Admin',
     'middleware' => 'auth',

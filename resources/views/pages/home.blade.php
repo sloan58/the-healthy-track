@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-image: url('/uploads/track.jpg')">
+<html lang="en" class="full">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +31,7 @@
 <div class="container a">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
+        <img class="img-responsive" src="/uploads/Logo.png" alt="Logo"/>
             {{--<div>Here it is</div>--}}
         </div>
     </div>

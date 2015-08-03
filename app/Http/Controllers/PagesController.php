@@ -16,4 +16,11 @@ class PagesController extends Controller
 
         return view('pages.home', $data);
     }
+
+    public function about()
+    {
+        $data = $this->dispatch(new BlogIndexData(''));
+
+        return view('pages.about', $data);
+    }
 }

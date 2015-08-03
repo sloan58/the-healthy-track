@@ -10,23 +10,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">{{ config('blog.name') }}</a>
+      {{--<a class="navbar-brand" href="/">{{ config('blog.name') }}</a>--}}
     </div>
 
     {{-- Collect the nav links, forms, and other content for toggling --}}
     <div class="collapse navbar-collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li>
-          {{--<a href="/">Home</a>--}}
+          <a href="/">Home</a>
         </li>
           <li>
-              {{--<a href="/blog">Blog</a>--}}
+              <a href="/blog">Blog</a>
           </li>
           <li>
-              {{--<a href="/contact">Contact Me</a>--}}
-          </li>
+            <a href="/about">About Me</a>
+        </li>
       </ul>
         <ul class="nav navbar-nav navbar-right">
+         <li>
+              <a href="/contact">Contact</a>
           <li>
         </li>
       </ul>

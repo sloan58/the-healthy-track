@@ -8883,13 +8883,14 @@ body {
 }
 .full {
   background: url('/uploads/track.jpg') no-repeat center center fixed;
+  background-position: center center;
   background-size: cover;
   -o-background-size: cover;
 }
 .a {
   position: absolute;
-  top: 350px;
-  left: 350px;
+  top: 5%;
+  left: 3%;
 }
 \.intro-header .post-heading .meta a,
 article a {
